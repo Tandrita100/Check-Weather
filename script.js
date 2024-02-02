@@ -5,7 +5,7 @@ async function fetchData(city = 'Delhi') {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '2ebaf74ddfmsh38c6dea5d2eb7cdp10baebjsn2ca7beb9400f',
+            'X-RapidAPI-Key': 'YOUR-API-KEY',
             'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
         }
     };
@@ -71,7 +71,7 @@ async function fetchCommonPlacesData() {
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '2ebaf74ddfmsh38c6dea5d2eb7cdp10baebjsn2ca7beb9400f',
+                'X-RapidAPI-Key': 'YOUR-API-KEY',
                 'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
             }
         };
@@ -125,7 +125,7 @@ async function fetchOtherCommonPlacesData() {
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '2ebaf74ddfmsh38c6dea5d2eb7cdp10baebjsn2ca7beb9400f',
+                'X-RapidAPI-Key': 'YOUR-API-KEY',
                 'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
             }
         };
