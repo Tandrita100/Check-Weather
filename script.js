@@ -16,32 +16,41 @@ async function fetchData(city = 'Delhi') {
         if (response.status === 429) {
             const retryAfter = response.headers.get('Retry-After');
             console.log(`Rate limited. Retry after ${retryAfter} seconds.`);
-            // Implement delay or other strategies here
+            
         } else {
-            const result = await response.json(); // Parse JSON from response text
+            const result = await response.json();
             console.log(result);
 
-            // Update HTML elements
-            document.getElementById('cityName').innerHTML = city;
-            document.getElementById('temp').innerHTML = result.temp;
-            document.getElementById('feels_like').innerHTML = result.feels_like;
-            document.getElementById('max_temp').innerHTML = result.max_temp;
-            document.getElementById('min_temp').innerHTML = result.min_temp;
-            document.getElementById('humidity').innerHTML = result.humidity;
-            document.getElementById('humidity2').innerHTML = result.humidity;
-            document.getElementById('Cloud_pct').innerHTML = result.cloud_pct;
-            document.getElementById('Wind_speed').innerHTML = result.wind_speed;
-            document.getElementById('Wind_speed2').innerHTML = result.wind_speed;
-            document.getElementById('Wind_degrees').innerHTML = result.wind_degrees;
-            document.getElementById('Sunrise').innerHTML = result.sunrise;
-            document.getElementById('Sunset').innerHTML = result.sunset;
+            // Update HTML elements if they exist
+            const updateElement = (id, value) => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = value;
+                } else {
+                    console.warn(`Element with ID '${id}' not found.`);
+                }
+            };
+
+            updateElement('cityName', city);
+            updateElement('temp', result.temp);
+            updateElement('feels_like', result.feels_like);
+            updateElement('max_temp', result.max_temp);
+            updateElement('min_temp', result.min_temp);
+            updateElement('humidity', result.humidity);
+            updateElement('humidity2', result.humidity);
+            updateElement('Cloud_pct', result.cloud_pct);
+            updateElement('Wind_speed', result.wind_speed);
+            updateElement('Wind_speed2', result.wind_speed);
+            updateElement('Wind_degrees', result.wind_degrees);
+            updateElement('Sunrise', result.sunrise);
+            updateElement('Sunset', result.sunset);
         }
     } catch (error) {
         console.error(error);
     }
 }
 
-// Initial load with default city (Rudrapur)
+// Initial load with default city (Delhi)
 fetchData();
 
 // Function to handle user searches
@@ -54,6 +63,7 @@ function searchCity() {
         fetchData(cityInput);
     }
 }
+
 
 
 
