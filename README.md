@@ -1,4 +1,4 @@
-#Check-Weather-app
+# Check-Weather-app
 
 This project is created by using HTML, Bootstrap CSS and Javascript.
 I also used a Weather Api that gives correct information about the weather around the whole world.
