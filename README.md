@@ -18,8 +18,11 @@ Weather by API-Ninjas (RapidAPI)
 https://rapidapi.com/apininjas/api/weather-by-api-ninjas/
 
 ⚙️ How to Use
+
 1- Enter a city name
+
 2- Click search
+
 3- View weather details
 
 📌 Note
