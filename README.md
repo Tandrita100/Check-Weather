@@ -4,9 +4,9 @@ A simple weather application built using HTML, Bootstrap, and JavaScript.
 It shows real-time weather details for any city.
 
 🚀 Features
--> Search weather by city
--> Shows temperature, humidity, and wind speed
--> Simple and responsive design
+- Search weather by city
+- Shows temperature, humidity, and wind speed
+- Simple and responsive design
 
 🛠️ Tech Stack
 - HTML
