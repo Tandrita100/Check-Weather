@@ -1,23 +1,23 @@
-🌦️ Weather App
+# 🌦️ Weather App
 
 A simple weather application built using HTML, Bootstrap, and JavaScript.
 It shows real-time weather details for any city.
 
-🚀 Features
+# 🚀 Features
 - Search weather by city
 - Shows temperature, humidity, and wind speed
 - Simple and responsive design
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 - HTML
 - Bootstrap
 - JavaScript
 
-🔗 API Used
+# 🔗 API Used
 Weather by API-Ninjas (RapidAPI)
 https://rapidapi.com/apininjas/api/weather-by-api-ninjas/
 
-⚙️ How to Use
+# ⚙️ How to Use
 
 1- Enter a city name
 
@@ -25,5 +25,5 @@ https://rapidapi.com/apininjas/api/weather-by-api-ninjas/
 
 3- View weather details
 
-📌 Note
+# 📌 Note
 Add your API key in the JavaScript file before running the project.
