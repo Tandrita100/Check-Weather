@@ -27,3 +27,4 @@ https://rapidapi.com/apininjas/api/weather-by-api-ninjas/
 
 # 📌 Note
 Add your API key in the JavaScript file before running the project.
+54535365
