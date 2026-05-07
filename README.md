@@ -16,7 +16,6 @@ It shows real-time weather details for any city.
 - JavaScript
 
 # 🔗 API Used
-
 Weather by API-Ninjas (RapidAPI)
 https://rapidapi.com/apininjas/api/weather-by-api-ninjas/
 
@@ -29,5 +28,4 @@ https://rapidapi.com/apininjas/api/weather-by-api-ninjas/
 3- View weather details
 
 # 📌 Note
-
 Add your API key in the JavaScript file before running the project.
